@@ -1,0 +1,87 @@
+/* General */
+.navbar-with-background-image {
+    background: linear-gradient(to right, rgba(72, 146, 148, 0.65), rgba(67, 105, 119, 0.44));
+    z-index: 1;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #1b68b7;
+    background: #FC5C7D;
+    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+    background: linear-gradient(to right, #6A82FB, #FC5C7D);
+}
+
+/* Search Form */
+
+.card.mb-4.form-containerv2 {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #FC5C7D;
+    background: -webkit-linear-gradient(to right, #6A82FB, #FC5C7D);
+    background: linear-gradient(to right, #6A82FB, #FC5C7D);
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.barra {
+    width: calc(100% - 40px);
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #666;
+    padding: 20px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btnBuscar {
+    width: calc(100% - 40px);
+    height: 50px;
+    border-radius: 10px;
+    background-color: #267dc0;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btnBuscar:hover {
+    background-color: #205a8d;
+}
+
+.label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #267dc0;
+}
+
+/* User Information */
+
+.alert.alert-info.user-info-container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: rgba(36, 190, 185, 0.53);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.campo {
+    margin-bottom: 5px;
+}
+
+/* Search Bar Animations */
+
+.barra:focus {
+    transform: translateY(-10px) bounce;
+    transition: transform 0.5s ease-in-out;
+}
+
+.barra:focus + .label {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
